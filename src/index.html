@@ -1,0 +1,497 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <style>
+    .bg-custom-gradient{
+      background: linear-gradient(180deg, #E8F5F8 0%, #FFFFFF 100%);
+
+    }
+
+    .bg-custom-gradient-reverse {
+      background: linear-gradient(0deg, #E8F5F8 0%, #FFFFFF 100%);
+    }
+
+    .comparison-table-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+     
+    }
+    .comparison-table-wrapper {
+      width: 100%;
+      max-width: 80rem;
+      overflow-x: auto;
+    }
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      overflow: hidden;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .comparison-table thead {
+      background-color: #ebf8ff;
+      color: #333;
+    }
+    .comparison-table th,
+    .comparison-table td {
+      padding: 1.5rem;
+      text-align: center;
+      font-size: 1.125rem;
+      font-weight: 500;
+    }
+    .comparison-table th {
+      text-align: left;
+    }
+    .comparison-table tbody tr:nth-child(even) {
+      background-color: #f0f9ff;
+    }
+    .comparison-table tbody tr:nth-child(odd) {
+      background-color: #ffffff;
+    }
+    .comparison-table tbody td span {
+      display: inline-block;
+      width: 1.5rem;
+      height: 1.5rem;
+      line-height: 1.5rem;
+      text-align: center;
+      border-radius: 9999px;
+      color: #fff;
+    }
+    .comparison-table .check-icon {
+      background-color: #04273C;
+    }
+    .comparison-table .cross-icon {
+      background-color: #000;
+    }
+    .highlight-column {
+      background-color: #04273C;
+      color: #fff;
+      text-align: center !important;
+      font-weight: bold;
+      
+    }
+
+    .rounded-top {
+      border-top-left-radius: 30px; /* Ajusta el valor según lo que necesites */
+      border-top-right-radius: 30px; /* Ajusta el valor según lo que necesites */
+  }
+
+  .rounded-bottom {
+    border-bottom-left-radius: 30px; /* Ajusta el valor según lo que necesites */
+    border-bottom-right-radius: 30px; /* Ajusta el valor según lo que necesites */
+}
+
+  
+    @media (max-width: 768px) {
+      .comparison-table th,
+      .comparison-table td {
+        padding: 1rem;
+        font-size: 1rem;
+      }
+    }
+    
+  </style>
+</head>
+<body  >
+  <section class="tw-py-12 bg-custom-gradient">
+    <div class="tw-max-w-6xl tw-mx-auto tw-text-center">
+      <h2 class="tw-text-sm tw-text-gray-600 tw-uppercase">Why Invigorated Water Stands Out</h2>
+      <h1 class="tw-text-4xl tw-font-bold tw-text-gray-800 tw-mt-2">What makes us special</h1>
+      <p class="tw-text-gray-600 tw-mt-4">
+        What makes us special is that we do not only remove contaminants but also add essential minerals, providing Alkaline Water (PH9).
+      </p>
+    </div>
+    <div class="comparison-table-container">
+      <div class="comparison-table-wrapper">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>&nbsp;</th>
+              <th class="highlight-column rounded-top">Invigorated Water</th>
+              <th >Brita</th>
+              <th>ZeroWater</th>
+              <th>PUR</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Add essential minerals</td>
+              <td class="highlight-column"><span class="check-icon">&#10003;</span></td>
+              <td><span class="cross-icon">&#10005;</span></td>
+              <td><span class="cross-icon">&#10005;</span></td>
+              <td><span class="cross-icon">&#10005;</span></td>
+            </tr>
+            <tr>
+              <td>Increases PH</td>
+              <td class="highlight-column"><span class="check-icon">&#10003;</span></td>
+              <td><span class="cross-icon">&#10005;</span></td>
+              <td><span class="cross-icon">&#10005;</span></td>
+              <td><span class="cross-icon">&#10005;</span></td>
+            </tr>
+            <tr>
+              <td>Commitment to Health & Wellbeing</td>
+              <td class="highlight-column"><span class="check-icon">&#10003;</span></td>
+              <td><span class="cross-icon">&#10005;</span></td>
+              <td><span class="cross-icon">&#10005;</span></td>
+              <td><span class="cross-icon">&#10005;</span></td>
+            </tr>
+            <tr>
+              <td>Volume</td>
+              <td class="highlight-column rounded-bottom">96 gal</td>
+              <td>40 gal</td>
+              <td>15 gal</td>
+              <td>40 gal</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+  
+  
+
+      <section class="bg-custom-gradient tw-py-12">
+        <div class="tw-max-w-6xl tw-mx-auto tw-px-4 lg:tw-flex lg:tw-gap-8">
+          <!-- Texto descriptivo e imagen de la jarra -->
+          <div class="tw-w-full lg:tw-w-1/2 tw-mb-8 lg:tw-mb-0">
+            <p class="tw-text-4xl tw-font-bold tw-text-gray-800">Dreams fulfilled - high alkaline filtered water in a sleek glass pitcher with a bamboo lid.</p>
+            <div class="tw-mt-6">
+              <img src="./img/jarra.png" alt="Glass pitcher with bamboo lid" class="tw-w-full tw-rounded-lg">
+            </div>
+          </div>
+          
+          <!-- Detalles del producto -->
+          <div class="tw-w-full lg:tw-w-1/2 tw-bg-white tw-rounded-xl tw-shadow-lg tw-border tw-border-black">
+            <div class="tw-p-6">
+              <!-- Product Details -->
+              <div class="tw-border-b tw-border-gray-200 tw-pb-4">
+                <h2 class="tw-font-semibold tw-text-gray-800">Product Details</h2>
+                
+                <p class="tw-text-gray-600 tw-mt-2">Tap water can contain chemicals and heavy metals that may have adverse health effects over time. Our ULTRA filters are certified to remove over 90% of lead, chlorine, and other contaminants. Unlike competitors, our filters not only purify your water but also add essential minerals that other filters remove, supporting your health and wellness. Start your journey to smarter hydration today!</p>
+              </div>
+          
+              <!-- Why Alkaline Water -->
+              <div class="tw-border-b tw-border-gray-200 tw-pt-4 tw-pb-4">
+                <h2 class="tw-font-semibold tw-text-gray-800">Why Alkaline Water</h2>
+                <p class="tw-text-gray-600 tw-mt-2">Tap water can contain chemicals and heavy metals that may have adverse health effects over time. Our ULTRA filters are certified to remove over 90% of lead, chlorine, and other contaminants. Unlike competitors, our filters not only purify your water but also add essential minerals that other filters remove, supporting your health and wellness. Start your journey to smarter hydration today!</p>
+                <!-- Imagen PH Scale -->
+                <div class="tw-mt-4">
+                  <img src="path-to-your-ph-scale-image.png" alt="PH Scale" class="tw-w-full tw-rounded-md">
+                </div>
+              </div>
+          
+              <!-- Certification y Tech Specs -->
+              <div class="tw-border-b tw-border-gray-200 tw-pt-4 tw-pb-4">
+                <h2 class="tw-font-semibold tw-text-gray-800">Certification</h2>
+                <!-- Botón plegable -->
+                <button class="tw-w-full tw-text-right tw-text-yellow-500 tw-font-bold tw-py-2">+</button>
+              </div>
+              <div class="tw-pt-4">
+                <h2 class="tw-font-semibold tw-text-gray-800">Tech Specs</h2>
+                <!-- Botón plegable -->
+                <button class="tw-w-full tw-text-right tw-text-yellow-500 tw-font-bold tw-py-2">+</button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+      
+      <section class="tw-py-12  bg-custom-gradient-reverse tw-relative">
+        <div class="tw-max-w-6xl tw-mx-auto tw-px-4">
+          <!-- Imagen de fondo a la izquierda -->
+          <div class="tw-absolute tw-left-0 tw-top-0 tw-w-1/3 tw-h-full tw-bg-no-repeat tw-bg-left tw-bg-cover" style="background-image: url('./img/bg-left.png'); background-size: 60%"></div>
+          
+          <!-- Contenido principal -->
+          <div class="tw-relative tw-z-10">
+            <!-- Header de la sección -->
+            <header class="tw-text-center tw-mb-8">
+              <h3 class="tw-text-sm tw-text-gray-600 tw-uppercase">Hydrate Better, Live Healthier</h3>
+              <h2 class="tw-text-4xl tw-font-bold tw-text-gray-800 tw-mt-2">The Benefits of Alkaline Water</h2>
+              <p class="tw-text-gray-600 tw-mt-4">Alkaline water offers more than just hydration, it's a powerful tool for boosting health and well-being.</p>
+            </header>
+      
+            <!-- Contenido principal en columnas -->
+            <div class="tw-flex tw-flex-wrap tw--mx-3">
+              <!-- Tarjeta 1 -->
+              <article class="tw-w-full md:tw-w-1/2 lg:tw-w-1/3 tw-px-3 tw-mb-6">
+                <div class="tw-bg-white tw-rounded-lg tw-shadow-lg tw-p-6 tw-h-full">
+                  <img src="path-to-your-image-1.jpg" alt="Improves Hydration" class="tw-rounded-lg tw-mb-4 tw-w-full">
+                  <h4 class="tw-text-2xl tw-font-semibold tw-text-gray-800">Improves Hydration</h4>
+                  <p class="tw-text-gray-600 tw-mt-2">Alkaline water may be more easily absorbed by the body, leading to better hydration, especially beneficial for athletes.</p>
+                </div>
+              </article>
+      
+              <!-- Tarjeta 2 -->
+              <article class="tw-w-full md:tw-w-1/2 lg:tw-w-1/3 tw-px-3 tw-mb-6">
+                <div class="tw-bg-white tw-rounded-lg tw-shadow-lg tw-p-6 tw-h-full tw-flex tw-flex-col">
+                  <div class="tw-flex tw-items-center tw-mb-4">
+                    <div class="tw-bg-blue-100 tw-p-2 tw-rounded-full">
+                      <!-- Icono de Digestive Health -->
+                      <img src="path-to-icon-1.svg" alt="Digestive Health Icon" class="tw-w-6 tw-h-6">
+                    </div>
+                  </div>
+                  <h4 class="tw-text-2xl tw-font-semibold tw-text-gray-800">Digestive Health</h4>
+                  <p class="tw-text-gray-600 tw-mt-2 tw-flex-grow">May improve digestion and reduce symptoms like bloating and indigestion by balancing stomach pH.</p>
+                </div>
+              </article>
+      
+              <!-- Tarjeta 3 -->
+              <article class="tw-w-full md:tw-w-1/2 lg:tw-w-1/3 tw-px-3 tw-mb-6">
+                <div class="tw-bg-white tw-rounded-lg tw-shadow-lg tw-p-6 tw-h-full">
+                  <img src="path-to-your-image-2.jpg" alt="Skin Health" class="tw-rounded-lg tw-mb-4 tw-w-full">
+                  <h4 class="tw-text-2xl tw-font-semibold tw-text-gray-800">Skin Health</h4>
+                  <p class="tw-text-gray-600 tw-mt-2">Improved hydration can lead to better skin elasticity and reduced appearance of fine lines and wrinkles.</p>
+                </div>
+              </article>
+      
+              <!-- Tarjeta 4 -->
+              <article class="tw-w-full md:tw-w-1/2 lg:tw-w-1/3 tw-px-3 tw-mb-6">
+                <div class="tw-bg-white tw-rounded-lg tw-shadow-lg tw-p-6 tw-h-full">
+                  <img src="path-to-your-image-3.jpg" alt="Antioxidant Properties" class="tw-rounded-lg tw-mb-4 tw-w-full">
+                  <h4 class="tw-text-2xl tw-font-semibold tw-text-gray-800">Antioxidant Properties</h4>
+                  <p class="tw-text-gray-600 tw-mt-2">Believed to have antioxidant properties that help combat free radicals and reduce oxidative stress.</p>
+                </div>
+              </article>
+      
+              <!-- Tarjeta 5 -->
+              <article class="tw-w-full md:tw-w-1/2 lg:tw-w-1/3 tw-px-3 tw-mb-6">
+                <div class="tw-bg-white tw-rounded-lg tw-shadow-lg tw-p-6 tw-h-full tw-flex tw-flex-col">
+                  <div class="tw-flex tw-items-center tw-mb-4">
+                    <div class="tw-bg-blue-100 tw-p-2 tw-rounded-full">
+                      <!-- Icono de Energy Levels -->
+                      <img src="path-to-icon-2.svg" alt="Energy Levels Icon" class="tw-w-6 tw-h-6">
+                    </div>
+                  </div>
+                  <h4 class="tw-text-2xl tw-font-semibold tw-text-gray-800">Enhanced Energy Levels</h4>
+                  <p class="tw-text-gray-600 tw-mt-2 tw-flex-grow">Alkaline water may be more easily absorbed by the body, leading to better hydration, especially beneficial for athletes.</p>
+                </div>
+              </article>
+      
+              <!-- Tarjeta 6 -->
+              <article class="tw-w-full md:tw-w-1/2 lg:tw-w-1/3 tw-px-3 tw-mb-6">
+                <div class="tw-bg-white tw-rounded-lg tw-shadow-lg tw-p-6 tw-h-full tw-flex tw-flex-col">
+                  <div class="tw-flex tw-items-center tw-mb-4">
+                    <div class="tw-bg-blue-100 tw-p-2 tw-rounded-full">
+                      <!-- Icono de Contaminant Removal -->
+                      <img src="path-to-icon-3.svg" alt="Contaminant Removal Icon" class="tw-w-6 tw-h-6">
+                    </div>
+                  </div>
+                  <h4 class="tw-text-2xl tw-font-semibold tw-text-gray-800">Removal of Contaminants</h4>
+                  <p class="tw-text-gray-600 tw-mt-2 tw-flex-grow">Filters out harmful contaminants such as chlorine, lead, mercury, and pesticides, providing safer drinking water.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+      <section class="tw-py-12  tw-relative tw-bg-no-repeat tw-bg-right" style="background-image: url('./img/bg-right.png'); background-size: 20%;">
+        <div class="tw-max-w-6xl tw-mx-auto tw-flex tw-flex-wrap tw-items-center tw-px-4">
+          <!-- Texto descriptivo -->
+          <div class="tw-w-full lg:tw-w-1/2 tw-pr-8">
+            <header class="tw-mb-6">
+              <h3 class="tw-text-sm tw-text-gray-600 tw-uppercase">Pure Water, Better Health</h3>
+              <h2 class="tw-text-4xl tw-font-bold tw-text-gray-800 tw-mt-2">Why should I filter my water?</h2>
+              <p class="tw-text-gray-600 tw-mt-4">Filtering your water is essential for ensuring that you and your family enjoy clean, safe, and healthy hydration every day.</p>
+            </header>
+      
+            <!-- Contenido principal -->
+            <div class="tw-mb-6">
+              <h4 class="tw-text-lg tw-font-semibold tw-text-gray-800 tw-mb-2 tw-border-l-4 tw-border-yellow-500 tw-pl-2">Alkaline water & digestive health</h4>
+              <p class="tw-text-gray-600">
+                The higher pH of alkaline water can neutralize stomach acid, reducing the symptoms of acid reflux and heartburn. Additionally, drinking alkaline water can aid in digestion and help to break down food more effectively, which may reduce bloating and promote a smoother digestive process. By maintaining a balanced internal environment, alkaline water supports overall digestive health and can contribute to a more comfortable, less disrupted digestive system.
+              </p>
+            </div>
+      
+            <!-- Lista de enlaces -->
+            <ul class="tw-space-y-2 tw-text-blue-700 tw-font-medium">
+              <li>The true about your tap water</li>
+              <li>Minerals to increase your energy levels</li>
+              <li>No microplastic</li>
+              <li>Subscribe</li>
+            </ul>
+          </div>
+      
+          <!-- Imagen -->
+          <div class="tw-w-full lg:tw-w-1/2 tw-pl-8 tw-mt-8 lg:tw-mt-0">
+            <img src="./img/lemon-juice.png" alt="Jug of water with lemons" class="tw-w-full tw-rounded-lg tw-shadow-lg">
+          </div>
+        </div>
+      </section>
+      
+      
+
+      <section class="tw-py-12 bg-custom-gradient">
+        <div class="tw-max-w-6xl tw-mx-auto tw-px-4 tw-flex tw-flex-wrap">
+          <!-- Texto descriptivo -->
+          <div class="tw-w-full lg:tw-w-1/3 tw-pr-8">
+            <header class="tw-mb-6">
+              <h3 class="tw-text-sm tw-text-gray-600 tw-uppercase">Get Clarity, Stay Informed</h3>
+              <h2 class="tw-text-4xl tw-font-bold tw-text-gray-800 tw-mt-2">Frequently Asked Questions</h2>
+              <p class="tw-text-gray-600 tw-mt-4">Find answers to common questions about the pH Restore Glass Pitcher, ensuring you make the most of your purchase.</p>
+            </header>
+          </div>
+    
+          <!-- Acordeón de Preguntas -->
+          <div class="tw-w-full lg:tw-w-2/3">
+            <div class="tw-space-y-4">
+              <!-- Pregunta 1 -->
+              <div class="tw-bg-[#04273C] tw-rounded-full tw-shadow-lg tw-p-5 tw-flex tw-justify-between tw-items-center">
+                <span class="tw-text-white tw-font-semibold">Are the pitchers and dispensers dishwasher safe?</span>
+                <button class="tw-text-white tw-font-bold tw-ml-2">+</button>
+              </div>
+    
+              <!-- Pregunta 2 -->
+              <div class="tw-bg-[#04273C] tw-rounded-full tw-shadow-lg tw-p-5 tw-flex tw-justify-between tw-items-center">
+                <span class="tw-text-white tw-font-semibold">What kind of plastic are these products made of?</span>
+                <button class="tw-text-white tw-font-bold tw-ml-2">+</button>
+              </div>
+    
+              <!-- Pregunta 3 -->
+              <div class="tw-bg-[#04273C] tw-rounded-full tw-shadow-lg tw-p-5 tw-flex tw-justify-between tw-items-center">
+                <span class="tw-text-white tw-font-semibold">How do you operate and set up the gauge/timer on the lid?</span>
+                <button class="tw-text-white tw-font-bold tw-ml-2">+</button>
+              </div>
+    
+              <!-- Pregunta 4 -->
+              <div class="tw-bg-[#04273C] tw-rounded-full tw-shadow-lg tw-p-5 tw-flex tw-justify-between tw-items-center">
+                <span class="tw-text-white tw-font-semibold">My reservoir is stuck, how can I remove it?</span>
+                <button class="tw-text-white tw-font-bold tw-ml-2">+</button>
+              </div>
+    
+              <!-- Pregunta 5 -->
+              <div class="tw-bg-[#04273C] tw-rounded-full tw-shadow-lg tw-p-5 tw-flex tw-justify-between tw-items-center">
+                <span class="tw-text-white tw-font-semibold">The spigot on my countertop dispenser is leaking.</span>
+                <button class="tw-text-white tw-font-bold tw-ml-2">+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="tw-py-12 bg-white">
+        <div class="tw-max-w-6xl tw-mx-auto   tw-flex tw-flex-wrap  tw-gap-5">
+          <!-- Tarjeta 1: Free Shipping -->
+          <div class="tw-w-full md:tw-w-4/12  bg-custom-gradient tw-rounded-xl tw-shadow-lg tw-p-6 tw-flex tw-items-center">
+            <div class="tw-bg-blue-100 tw-rounded-full tw-p-3 tw-flex tw-items-center tw-justify-center tw-mr-4">
+              <img src="path-to-shipping-icon.svg" alt="Shipping Icon" class="tw-w-8 tw-h-8">
+            </div>
+            <div>
+              <h4 class="tw-text-lg tw-font-semibold tw-text-gray-800">Free Shipping</h4>
+              <p class="tw-text-gray-600">Get free standard shipping on all US orders</p>
+            </div>
+          </div>
+      
+          <!-- Tarjeta 2: Customer Service -->
+          <div class="tw-w-full md:tw-w-4/12  bg-custom-gradient tw-rounded-xl tw-shadow-lg tw-p-6 tw-flex tw-items-center">
+            <div class="tw-bg-blue-100 tw-rounded-full tw-p-3 tw-flex tw-items-center tw-justify-center tw-mr-4">
+              <img src="path-to-customer-service-icon.svg" alt="Customer Service Icon" class="tw-w-8 tw-h-8">
+            </div>
+            <div>
+              <h4 class="tw-text-lg tw-font-semibold tw-text-gray-800">Customer Service</h4>
+              <p class="tw-text-gray-600">+1-800-898-0103<br>support@invigoratedwater.com</p>
+            </div>
+          </div>
+      
+          <!-- Tarjeta 3: Refer a Friend -->
+          <div class="tw-w-full md:tw-w-4/12 bg-custom-gradient tw-rounded-xl tw-shadow-lg tw-p-6 tw-flex tw-items-center">
+            <div class="tw-bg-blue-100 tw-rounded-full tw-p-3 tw-flex tw-items-center tw-justify-center tw-mr-4">
+              <img src="path-to-refer-friend-icon.svg" alt="Refer a Friend Icon" class="tw-w-8 tw-h-8">
+            </div>
+            <div>
+              <h4 class="tw-text-lg tw-font-semibold tw-text-gray-800">Refer a Friend</h4>
+              <p class="tw-text-gray-600">Give $30 off & Get $30 off</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      <footer class="tw-bg-[#04273C] tw-text-white tw-py-12 tw-rounded-t-xl">
+        <div class="tw-max-w-6xl tw-mx-auto tw-px-4 tw-flex tw-flex-wrap  tw-justify-around">
+          <!-- Logo y descripción -->
+          <div class="tw-w-full lg:tw-w-4/12 mx-5 tw-mb-8 lg:tw-mb-0">
+            <div>
+                <img src="./img/IW_Logo_Horizontal_White 2.png" width="250" height="250" alt="Invigorated Water" class="tw-mb-4">
+            </div>
+          
+            <p class="tw-mb-4">Let us do the planning and save 10% with our Subscribe and Save program — ensuring you never run out.</p>
+            <form class="tw-flex tw-items-center tw-max-w-md tw-space-x-2">
+                <input type="email" placeholder="Enter your email" class="tw-py-3 tw-px-4 tw-text-gray-800 tw-bg-white tw-rounded-lg tw-w-full focus:tw-outline-none" required>
+                <button type="submit" class="tw-bg-[#F7D563] tw-text-gray-800 tw-font-semibold tw-px-6 tw-py-3 tw-rounded-lg">Subscribe</button>
+              </form>
+              
+            <p class="tw-text-xs tw-mt-2">By subscribing, you agree to our Privacy Policy and provide consent to receive updates from our company.</p>
+          </div>
+      
+          <!-- Links de Productos, Quick Links y Recursos -->
+          <div class="tw-w-full lg:tw-w-6/12 tw-flex tw-flex-wrap">
+            <div class="tw-w-full md:tw-w-1/3 tw-mb-8 lg:tw-mb-0">
+              <h4 class="tw-font-semibold tw-mb-4">Products</h4>
+              <ul class="tw-space-y-2">
+                <li><a href="#" class="tw-text-white hover:tw-underline">Pitchers</a></li>
+                <li><a href="#" class="tw-text-white hover:tw-underline">Dispensers</a></li>
+                <li><a href="#" class="tw-text-white hover:tw-underline">On-the-Go</a></li>
+                <li><a href="#" class="tw-text-white hover:tw-underline">Faucet Attachments</a></li>
+                <li><a href="#" class="tw-text-white hover:tw-underline">Shower Attachments</a></li>
+                <li><a href="#" class="tw-text-white hover:tw-underline">Test Kits</a></li>
+                <li><a href="#" class="tw-text-white hover:tw-underline">Filters</a></li>
+                <li><a href="#" class="tw-text-white hover:tw-underline">Shop All</a></li>
+              </ul>
+            </div>
+      
+            <div class="tw-w-full md:tw-w-1/3 tw-mb-8 lg:tw-mb-0">
+              <h4 class="tw-font-semibold tw-mb-4">Quick Links</h4>
+              <ul class="tw-space-y-2">
+                <li><a href="#" class="tw-text-white hover:tw-underline">Home</a></li>
+                <li><a href="#" class="tw-text-white hover:tw-underline">Subscribe + Save</a></li>
+                <li><a href="#" class="tw-text-white hover:tw-underline">Rewards</a></li>
+                <li><a href="#" class="tw-text-white hover:tw-underline">Best Sellers</a></li>
+                <li><a href="#" class="tw-text-white hover:tw-underline">Sale</a></li>
+                <li><a href="#" class="tw-text-white hover:tw-underline">Benefits</a></li>
+                <li><a href="#" class="tw-text-white hover:tw-underline">Refer Friends</a></li>
+                <li><a href="#" class="tw-text-white hover:tw-underline">Blog</a></li>
+                <li><a href="#" class="tw-text-white hover:tw-underline">About Us</a></li>
+                <li><a href="#" class="tw-text-white hover:tw-underline">Contact Us</a></li>
+                <li><a href="#" class="tw-text-white hover:tw-underline">Start a Return</a></li>
+              </ul>
+            </div>
+      
+            <div class="tw-w-full md:tw-w-1/3">
+              <h4 class="tw-font-semibold tw-mb-4">Resources</h4>
+              <ul class="tw-space-y-2">
+                <li><a href="#" class="tw-text-white hover:tw-underline">Wholesale</a></li>
+                <li><a href="#" class="tw-text-white hover:tw-underline">FAQ</a></li>
+                <li><a href="#" class="tw-text-white hover:tw-underline">Terms of Service</a></li>
+                <li><a href="#" class="tw-text-white hover:tw-underline">Privacy Policy</a></li>
+                <li><a href="#" class="tw-text-white hover:tw-underline">Return & Refund Policy</a></li>
+                <li><a href="#" class="tw-text-white hover:tw-underline">Privacy Rights</a></li>
+                <li><a href="#" class="tw-text-white hover:tw-underline">Privacy Choices</a></li>
+                <li><a href="#" class="tw-text-white hover:tw-underline">Cookies Settings</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      
+        <div class="tw-border-t tw-border-gray-700 tw-mt-8 tw-pt-4">
+          <div class="tw-max-w-6xl tw-mx-auto tw-px-4 tw-flex tw-flex-wrap tw-justify-between tw-items-center">
+            <div class="tw-flex tw-space-x-4">
+              <a href="#" class="tw-text-white hover:tw-text-yellow-500"><img src="path-to-facebook-icon.svg" alt="Facebook" class="tw-w-6 tw-h-6"></a>
+              <a href="#" class="tw-text-white hover:tw-text-yellow-500"><img src="path-to-instagram-icon.svg" alt="Instagram" class="tw-w-6 tw-h-6"></a>
+              <a href="#" class="tw-text-white hover:tw-text-yellow-500"><img src="path-to-twitter-icon.svg" alt="Twitter" class="tw-w-6 tw-h-6"></a>
+              <a href="#" class="tw-text-white hover:tw-text-yellow-500"><img src="path-to-linkedin-icon.svg" alt="LinkedIn" class="tw-w-6 tw-h-6"></a>
+            </div>
+            <p class="tw-text-sm tw-text-gray-400">© 2024 Invigorated Water. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+      
+  </body>
+  
+</html>
