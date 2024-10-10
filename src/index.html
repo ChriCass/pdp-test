@@ -80,6 +80,7 @@
     .rounded-top {
       border-top-left-radius: 30px; /* Ajusta el valor según lo que necesites */
       border-top-right-radius: 30px; /* Ajusta el valor según lo que necesites */
+      
   }
 
   .bg-card{
@@ -92,10 +93,14 @@
     border-bottom-right-radius: 30px; /* Ajusta el valor según lo que necesites */
 }
 
-.blur-effect {
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+.bg-glass-effect {
+  background-color: rgba(255, 255, 255, 0.281); /* Blanco con 60% de transparencia */
+  backdrop-filter: blur(8px); /* Desenfoque de fondo */
+  -webkit-backdrop-filter: blur(8px); /* Desenfoque de fondo para Safari */
+  border-radius: 12px; /* Bordes redondeados */
+  
 }
+
 
 
   
@@ -109,7 +114,7 @@
     
   </style>
 </head>
-<body  >
+<body class="bg-custom-gradient" >
 <!-- Barra de anuncio -->
 <section class="tw-bg-[#04273C] tw-py-2">
   <div class="tw-max-w-6xl tw-mx-auto tw-flex tw-justify-between tw-items-center tw-px-4">
@@ -156,7 +161,7 @@
   </div>
 </nav>
 
-<section class="tw-py-12 bg-custom-gradient-reverse">
+<section class="tw-py-12   tw-relative tw-bg-no-repeat tw-bg-right" style="background-image: url('./img/bg-right.png'); background-size: 50%;">
   <div class="tw-max-w-6xl tw-mx-auto tw-flex tw-flex-wrap tw-gap-8 tw-px-4">
     <!-- Galería de imágenes del producto -->
  
@@ -206,9 +211,9 @@
 
     <!-- Detalles del producto -->
     <div class="tw-w-full lg:tw-w-1/2">
-      <div class="blur-effect tw-rounded-lg tw-shadow-lg tw-p-6">
+      <div class="bg-glass-effect tw-rounded-lg  tw-p-6">
         <h2 class="tw-text-lg tw-text-gray-500">195+ Trusted Customer Reviews</h2>
-        <h1 class="tw-text-4xl lg:tw-text-5xl tw-font-extrabold tw-text-gray-800 tw-mt-2">
+        <h1 class="tw-text-4xl lg:tw-text-5xl tw-font-extrabold tw-text-black-800 tw-mt-2">
           Restore Glass Pitcher - Transform Your Tap Water into Clean, Mineral-Rich Hydration
         </h1>
         <p class="tw-text-gray-700 tw-mt-4">Indulge in purified, high pH water that's as refreshing as it is environmentally friendly.</p>
@@ -312,7 +317,7 @@
           </li>
         </ul>
 
-        <section class="tw-py-12 tw-bg-blue-50 tw-relative">
+        <section class="tw-py-12   tw-relative">
           <div class="tw-max-w-6xl tw-mx-auto tw-px-4">
               <h2 class="  tw-text-gray-800 tw-mb-6">What they are saying</h2>
               <div class="tw-flex tw-flex-wrap tw--mx-3">
@@ -413,7 +418,7 @@
             </tr>
             <tr>
               <td>Volume</td>
-              <td class="highlight-column rounded-bottom">96 gal</td>
+              <td class="highlight-column rounded-bottom ">96 gal</td>
               <td>40 gal</td>
               <td>15 gal</td>
               <td>40 gal</td>
@@ -491,7 +496,7 @@
                 <div class="tw-flex tw-flex-wrap tw--mx-3">
                     <!-- Columna 1: Card 1 y Card 4 -->
                     <div class="tw-w-full lg:tw-w-1/3 tw-px-3">
-                        <article class="tw-bg-white/30 tw-backdrop-blur-md tw-rounded-lg tw-shadow-lg tw-p-6 tw-mb-6" >
+                        <article class="bg-glass-effect tw-rounded-lg tw-shadow-lg tw-p-6 tw-mb-6" >
                             <img src="./img/kid-drinking.png" alt="Improves Hydration" class="tw-rounded-lg tw-mb-4 tw-w-full">
                             <div style="padding: 2rem;">
                               <h4 class="tw-text-2xl tw-font-bold tw-text-gray-800">Improves Hydration</h4>
@@ -500,7 +505,7 @@
                             
                         </article>
     
-                        <article class="tw-bg-white/30 tw-backdrop-blur-md tw-rounded-lg tw-shadow-lg  " style="padding: 3.5rem;">
+                        <article class="bg-glass-effect tw-rounded-lg tw-shadow-lg  " style="padding: 3.5rem;">
                           <div class="  tw-p-2 tw-rounded-full tw-mb-4">
                             <img src="./img/atom-icon.svg" alt="Digestive Health Icon"  width="52" height="52">
                         </div>
@@ -589,6 +594,75 @@
         </div>
       </section>
       
+      <section class="tw-py-12   tw-relative">
+        <!-- Fondo de agua salpicando a la izquierda (solo en pantallas grandes) -->
+        <img src="./img/bg-left.png" alt="Background water splash" class="tw-absolute tw-left-0 tw-top-0 tw-h-full tw-pointer-events-none tw-hidden lg:tw-block" style="z-index: -1;">
+      
+        <div class="tw-max-w-6xl tw-mx-auto tw-px-4">
+          <!-- Título de la sección -->
+          <div class="tw-text-center tw-mb-8">
+            <h3 class="tw-text-sm tw-text-gray-600 tw-uppercase">Real Feedback, Real Results</h3>
+            <h2 class="tw-text-2xl md:tw-text-4xl tw-font-bold tw-text-gray-800">Customer Reviews</h2>
+            <p class="tw-text-gray-600 tw-mt-2 md:tw-mt-4">See what others are saying about the pH Restore Glass Pitcher and how it has improved their hydration and well-being.</p>
+          </div>
+      
+          <!-- Slider de reseñas -->
+          <div class="swiper-container review-slider" style="overflow-x: hidden;">
+            <div class="swiper-wrapper">
+              <!-- Reseña 1 -->
+              <div class="swiper-slide">
+                <div class="bg-glass-effect tw-h-full  tw-rounded-lg tw-shadow-lg tw-p-4 md:tw-p-6">
+                  <h4 class="tw-text-lg md:tw-text-xl tw-font-semibold tw-text-gray-800">Very good quality and perfect size.</h4>
+                  <div class="tw-flex tw-items-center tw-mt-2">
+                    <span class="tw-text-yellow-500">★★★★★</span>
+                    <p class="tw-text-gray-600 tw-ml-2">Patricia</p>
+                  </div>
+                  <p class="tw-text-gray-600 tw-mt-2 md:tw-mt-4">"Love the design and the size is just right for my family. The water tastes great, and it’s so clear!"</p>
+                </div>
+              </div>
+                  <!-- Reseña 1 -->
+                  <div class="swiper-slide">
+                    <div class="bg-glass-effect tw-h-full  tw-rounded-lg tw-shadow-lg tw-p-4 md:tw-p-6">
+                      <h4 class="tw-text-lg md:tw-text-xl tw-font-semibold tw-text-gray-800">Very good quality and perfect size.</h4>
+                      <div class="tw-flex tw-items-center tw-mt-2">
+                        <span class="tw-text-yellow-500">★★★★★</span>
+                        <p class="tw-text-gray-600 tw-ml-2">Patricia</p>
+                      </div>
+                      <p class="tw-text-gray-600 tw-mt-2 md:tw-mt-4">"Love the design and the size is just right for my family. The water tastes great, and it’s so clear!"</p>
+                    </div>
+                  </div>
+              <!-- Reseña 2 -->
+              <div class="swiper-slide">
+                <div class="bg-glass-effect tw-h-full  tw-rounded-lg tw-shadow-lg tw-p-4 md:tw-p-6">
+                  <h4 class="tw-text-lg md:tw-text-xl tw-font-semibold tw-text-gray-800">Love the water quality with our invigorated pitchers!</h4>
+                  <div class="tw-flex tw-items-center tw-mt-2">
+                    <span class="tw-text-yellow-500">★★★★★</span>
+                    <p class="tw-text-gray-600 tw-ml-2">Alexandria P.</p>
+                  </div>
+                  <p class="tw-text-gray-600 tw-mt-2 md:tw-mt-4">"Absolutely love how fresh and clean the water is. Makes a huge difference in taste!"</p>
+                </div>
+              </div>
+      
+              <!-- Reseña 3 -->
+              <div class="swiper-slide">
+                <div class="bg-glass-effect tw-h-full tw-rounded-lg tw-shadow-lg tw-p-4 md:tw-p-6">
+                  <h4 class="tw-text-lg md:tw-text-xl tw-font-semibold tw-text-gray-800">So far so good!</h4>
+                  <div class="tw-flex tw-items-center tw-mt-2">
+                    <span class="tw-text-yellow-500">★★★★★</span>
+                    <p class="tw-text-gray-600 tw-ml-2">Jennifer P.</p>
+                  </div>
+                  <p class="tw-text-gray-600 tw-mt-2 md:tw-mt-4">"I've been using this pitcher for a month, and the water quality is fantastic. Easy to use and the taste is noticeably better."</p>
+                </div>
+              </div>
+      
+              <!-- Más reseñas según necesidad -->
+            </div>
+      
+            <!-- Paginación del slider -->
+            <div class="review-slider-pagination tw-mt-6"></div>
+          </div>
+        </div>
+      </section>
       
 
       <section class="tw-py-12 bg-custom-gradient">
@@ -638,6 +712,248 @@
           </div>
         </div>
       </section>
+
+      <section class="tw-py-12 tw-relative tw-bg-no-repeat tw-bg-right" style="background-image: url('./img/bg-right.png'); background-size: 20%;">
+        <div class="tw-max-w-6xl tw-mx-auto tw-px-4">
+          <header class="tw-text-center tw-mb-8">
+            <h3 class="tw-text-sm tw-text-gray-600 tw-uppercase">Discover More Hydration Essentials</h3>
+            <h2 class="tw-text-4xl tw-font-bold tw-text-gray-800">Products You May Also Like</h2>
+            <p class="tw-text-gray-600 tw-mt-4">Explore other top-rated products designed to enhance your hydration experience and support your healthy lifestyle.</p>
+          </header>
+      
+          <div class="swiper-container product-slider tw-mt-8 tw-py-3" style="overflow-x: hidden;">
+            <div class="swiper-wrapper">
+              <!-- Product Card 1 -->
+              <div class="swiper-slide tw-bg-white tw-rounded-xl tw-shadow-lg tw-p-6">
+                <div>
+                  <img src="./img/glass-water.png" alt="PH0001 Alkaline Water Filter" class="tw-w-full tw-rounded-md">
+                </div>
+                <div class="tw-flex tw-items-center">
+                  <div>  <h3 class="tw-font-bold tw-text-xl tw-text-gray-800 tw-mt-4">PH0001 Alkaline Water Filter</h3></div>
+                  <div>                  <p class="tw-text-gray-600 tw-font-bold  ">$20</p></div>
+                
+
+                </div>
+                <div class="tw-flex tw-items-center tw-gap-2">
+                  <div class="tw-text-yellow-500 tw-text-lg">
+                      ★★★★★
+                  </div>
+                  <div class="tw-mx-3 tw-px-3">
+                    <span class="tw-text-gray-800 tw-text-xs">2 Reviews</span>
+                  </div>
+                  
+              </div>
+
+              <div class="tw-space-y-4">
+                <!-- Selección de Color -->
+                <div>
+                    <label class="tw-block tw-text-gray-800 tw-font-medium">Color</label>
+                    <div class="tw-flex tw-gap-2 tw-mt-2">
+                        <span class="tw-w-5 tw-h-5 tw-rounded-full tw-border tw-border-yellow-500 tw-flex tw-items-center tw-justify-center">
+                            <span class="tw-w-2 tw-h-2 tw-rounded-full tw-bg-yellow-500"></span>
+                        </span>
+                        <div class="tw-flex">
+                          <span class="tw-w-5 tw-h-5 tw-rounded-full tw-bg-black"></span>
+                          <span class="tw-w-5 tw-h-5 tw-rounded-full tw-bg-gray-500"></span>
+                          <span class="tw-w-5 tw-h-5 tw-rounded-full tw-bg-blue-800"></span>
+                          <span class="tw-w-5 tw-h-5 tw-rounded-full tw-bg-red-500"></span>
+                          <span class="tw-w-5 tw-h-5 tw-rounded-full tw-bg-blue-300"></span>
+                        </div>
+                      
+                    </div>
+                </div>
+            
+                <!-- Selección de Tamaño -->
+                <div>
+                    <label class="tw-block tw-text-gray-800 tw-font-medium">Size</label>
+                    <div class="tw-flex tw-gap-4 tw-mt-2">
+                        <button class="tw-px-4 tw-py-2 tw-border tw-border-yellow-500 tw-rounded-full tw-text-sm tw-text-gray-800">1-Pack</button>
+                        <button class="tw-px-4 tw-py-2 tw-border tw-border-transparent tw-rounded-full tw-text-sm tw-text-gray-800">3-Pack</button>
+                    </div>
+                </div>
+            </div>
+            
+              
+        
+
+                <div class="  tw-flex tw-gap-2 tw-mt-4">
+                  <button class="tw-bg-[#F7D563] tw-w-full tw-px-4 tw-py-2 tw-rounded-md">Shop Now</button>
+                </div>
+              </div>
+              <div class="swiper-slide tw-bg-white tw-rounded-xl tw-shadow-lg tw-p-6">
+                <div>
+                  <img src="./img/glass-water.png" alt="PH0001 Alkaline Water Filter" class="tw-w-full tw-rounded-md">
+                </div>
+                <div class="tw-flex tw-items-center">
+                  <div>  <h3 class="tw-font-bold tw-text-xl tw-text-gray-800 tw-mt-4">PH0001 Alkaline Water Filter</h3></div>
+                  <div>                  <p class="tw-text-gray-600 tw-font-bold  ">$20</p></div>
+                
+
+                </div>
+                <div class="tw-flex tw-items-center tw-gap-2">
+                  <div class="tw-text-yellow-500 tw-text-lg">
+                      ★★★★★
+                  </div>
+                  <div class="tw-mx-3 tw-px-3">
+                    <span class="tw-text-gray-800 tw-text-xs">2 Reviews</span>
+                  </div>
+                  
+              </div>
+
+              <div class="tw-space-y-4">
+                <!-- Selección de Color -->
+                <div>
+                    <label class="tw-block tw-text-gray-800 tw-font-medium">Color</label>
+                    <div class="tw-flex tw-gap-2 tw-mt-2">
+                        <span class="tw-w-5 tw-h-5 tw-rounded-full tw-border tw-border-yellow-500 tw-flex tw-items-center tw-justify-center">
+                            <span class="tw-w-2 tw-h-2 tw-rounded-full tw-bg-yellow-500"></span>
+                        </span>
+                        <div class="tw-flex">
+                          <span class="tw-w-5 tw-h-5 tw-rounded-full tw-bg-black"></span>
+                          <span class="tw-w-5 tw-h-5 tw-rounded-full tw-bg-gray-500"></span>
+                          <span class="tw-w-5 tw-h-5 tw-rounded-full tw-bg-blue-800"></span>
+                          <span class="tw-w-5 tw-h-5 tw-rounded-full tw-bg-red-500"></span>
+                          <span class="tw-w-5 tw-h-5 tw-rounded-full tw-bg-blue-300"></span>
+                        </div>
+                      
+                    </div>
+                </div>
+            
+                <!-- Selección de Tamaño -->
+                <div>
+                    <label class="tw-block tw-text-gray-800 tw-font-medium">Size</label>
+                    <div class="tw-flex tw-gap-4 tw-mt-2">
+                        <button class="tw-px-4 tw-py-2 tw-border tw-border-yellow-500 tw-rounded-full tw-text-sm tw-text-gray-800">1-Pack</button>
+                        <button class="tw-px-4 tw-py-2 tw-border tw-border-transparent tw-rounded-full tw-text-sm tw-text-gray-800">3-Pack</button>
+                    </div>
+                </div>
+            </div>
+            
+              
+        
+
+                <div class="  tw-flex tw-gap-2 tw-mt-4">
+                  <button class="tw-bg-[#F7D563] tw-w-full tw-px-4 tw-py-2 tw-rounded-md">Shop Now</button>
+                </div>
+              </div>
+              <div class="swiper-slide tw-bg-white tw-rounded-xl tw-shadow-lg tw-p-6">
+                <div>
+                  <img src="./img/glass-water.png" alt="PH0001 Alkaline Water Filter" class="tw-w-full tw-rounded-md">
+                </div>
+                <div class="tw-flex tw-items-center">
+                  <div>  <h3 class="tw-font-bold tw-text-xl tw-text-gray-800 tw-mt-4">PH0001 Alkaline Water Filter</h3></div>
+                  <div>                  <p class="tw-text-gray-600 tw-font-bold  ">$20</p></div>
+                
+
+                </div>
+                <div class="tw-flex tw-items-center tw-gap-2">
+                  <div class="tw-text-yellow-500 tw-text-lg">
+                      ★★★★★
+                  </div>
+                  <div class="tw-mx-3 tw-px-3">
+                    <span class="tw-text-gray-800 tw-text-xs">2 Reviews</span>
+                  </div>
+                  
+              </div>
+
+              <div class="tw-space-y-4">
+                <!-- Selección de Color -->
+                <div>
+                    <label class="tw-block tw-text-gray-800 tw-font-medium">Color</label>
+                    <div class="tw-flex tw-gap-2 tw-mt-2">
+                        <span class="tw-w-5 tw-h-5 tw-rounded-full tw-border tw-border-yellow-500 tw-flex tw-items-center tw-justify-center">
+                            <span class="tw-w-2 tw-h-2 tw-rounded-full tw-bg-yellow-500"></span>
+                        </span>
+                        <div class="tw-flex">
+                          <span class="tw-w-5 tw-h-5 tw-rounded-full tw-bg-black"></span>
+                          <span class="tw-w-5 tw-h-5 tw-rounded-full tw-bg-gray-500"></span>
+                          <span class="tw-w-5 tw-h-5 tw-rounded-full tw-bg-blue-800"></span>
+                          <span class="tw-w-5 tw-h-5 tw-rounded-full tw-bg-red-500"></span>
+                          <span class="tw-w-5 tw-h-5 tw-rounded-full tw-bg-blue-300"></span>
+                        </div>
+                      
+                    </div>
+                </div>
+            
+                <!-- Selección de Tamaño -->
+                <div>
+                    <label class="tw-block tw-text-gray-800 tw-font-medium">Size</label>
+                    <div class="tw-flex tw-gap-4 tw-mt-2">
+                        <button class="tw-px-4 tw-py-2 tw-border tw-border-yellow-500 tw-rounded-full tw-text-sm tw-text-gray-800">1-Pack</button>
+                        <button class="tw-px-4 tw-py-2 tw-border tw-border-transparent tw-rounded-full tw-text-sm tw-text-gray-800">3-Pack</button>
+                    </div>
+                </div>
+            </div>
+            
+              
+        
+
+                <div class="  tw-flex tw-gap-2 tw-mt-4">
+                  <button class="tw-bg-[#F7D563] tw-w-full tw-px-4 tw-py-2 tw-rounded-md">Shop Now</button>
+                </div>
+              </div>
+              <div class="swiper-slide tw-bg-white tw-rounded-xl tw-shadow-lg tw-p-6">
+                <div>
+                  <img src="./img/glass-water.png" alt="PH0001 Alkaline Water Filter" class="tw-w-full tw-rounded-md">
+                </div>
+                <div class="tw-flex tw-items-center">
+                  <div>  <h3 class="tw-font-bold tw-text-xl tw-text-gray-800 tw-mt-4">PH0001 Alkaline Water Filter</h3></div>
+                  <div>                  <p class="tw-text-gray-600 tw-font-bold  ">$20</p></div>
+                
+
+                </div>
+                <div class="tw-flex tw-items-center tw-gap-2">
+                  <div class="tw-text-yellow-500 tw-text-lg">
+                      ★★★★★
+                  </div>
+                  <div class="tw-mx-3 tw-px-3">
+                    <span class="tw-text-gray-800 tw-text-xs">2 Reviews</span>
+                  </div>
+                  
+              </div>
+
+              <div class="tw-space-y-4">
+                <!-- Selección de Color -->
+                <div>
+                    <label class="tw-block tw-text-gray-800 tw-font-medium">Color</label>
+                    <div class="tw-flex tw-gap-2 tw-mt-2">
+                        <span class="tw-w-5 tw-h-5 tw-rounded-full tw-border tw-border-yellow-500 tw-flex tw-items-center tw-justify-center">
+                            <span class="tw-w-2 tw-h-2 tw-rounded-full tw-bg-yellow-500"></span>
+                        </span>
+                        <div class="tw-flex">
+                          <span class="tw-w-5 tw-h-5 tw-rounded-full tw-bg-black"></span>
+                          <span class="tw-w-5 tw-h-5 tw-rounded-full tw-bg-gray-500"></span>
+                          <span class="tw-w-5 tw-h-5 tw-rounded-full tw-bg-blue-800"></span>
+                          <span class="tw-w-5 tw-h-5 tw-rounded-full tw-bg-red-500"></span>
+                          <span class="tw-w-5 tw-h-5 tw-rounded-full tw-bg-blue-300"></span>
+                        </div>
+                      
+                    </div>
+                </div>
+            
+                <!-- Selección de Tamaño -->
+                <div>
+                    <label class="tw-block tw-text-gray-800 tw-font-medium">Size</label>
+                    <div class="tw-flex tw-gap-4 tw-mt-2">
+                        <button class="tw-px-4 tw-py-2 tw-border tw-border-yellow-500 tw-rounded-full tw-text-sm tw-text-gray-800">1-Pack</button>
+                        <button class="tw-px-4 tw-py-2 tw-border tw-border-transparent tw-rounded-full tw-text-sm tw-text-gray-800">3-Pack</button>
+                    </div>
+                </div>
+            </div>
+            
+              
+        
+
+                <div class="  tw-flex tw-gap-2 tw-mt-4">
+                  <button class="tw-bg-[#F7D563] tw-w-full tw-px-4 tw-py-2 tw-rounded-md">Shop Now</button>
+                </div>
+              </div>
+              <!-- Agrega más tarjetas de productos similares -->
+            </div>
+          </div>
+        </div>
+      </section>
+      
     
       <section class="tw-py-12   tw-relative">
         <div class="tw-max-w-6xl tw-mx-auto tw-px-4">
@@ -785,7 +1101,7 @@
             watchSlidesVisibility: true,
             watchSlidesProgress: true,
           });
-        
+      
           // Configurar el main-slider con los thumbs sincronizados
           var mainSlider = new Swiper('.main-slider', {
             spaceBetween: 10,
@@ -797,9 +1113,54 @@
               swiper: thumbSlider,
             },
           });
+      
+          // Configurar el slider de reseñas de clientes
+          var reviewSlider = new Swiper('.review-slider', {
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 20,
+            pagination: {
+              el: '.review-slider-pagination',
+              clickable: true,
+            },
+            breakpoints: {
+              640: {
+                slidesPerView: 1,
+              },
+              768: {
+                slidesPerView: 2,
+              },
+              1024: {
+                slidesPerView: 3,
+              },
+            },
+          });
+      
+          // Configurar el slider de productos recomendados
+          var productSlider = new Swiper('.product-slider', {
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 20,
+            breakpoints: {
+              640: {
+                slidesPerView: 1,
+              },
+              768: {
+                slidesPerView: 2,
+              },
+              1024: {
+                slidesPerView: 4,
+              },
+            },
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+          });
         });
-        
       </script>
+      
+      
   </body>
   
 </html>
