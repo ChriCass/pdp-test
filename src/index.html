@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <style>
     .bg-custom-gradient{
       background: linear-gradient(180deg, #E8F5F8 0%, #FFFFFF 100%);
@@ -81,10 +82,21 @@
       border-top-right-radius: 30px; /* Ajusta el valor según lo que necesites */
   }
 
+  .bg-card{
+    background: rgba(232, 245, 248, 0.5);
+
+  }
+
   .rounded-bottom {
     border-bottom-left-radius: 30px; /* Ajusta el valor según lo que necesites */
     border-bottom-right-radius: 30px; /* Ajusta el valor según lo que necesites */
 }
+
+.blur-effect {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
 
   
     @media (max-width: 768px) {
@@ -98,6 +110,265 @@
   </style>
 </head>
 <body  >
+<!-- Barra de anuncio -->
+<section class="tw-bg-[#04273C] tw-py-2">
+  <div class="tw-max-w-6xl tw-mx-auto tw-flex tw-justify-between tw-items-center tw-px-4">
+    <div></div>
+    <p class="tw-text-sm  tw-text-white">FREE shipping on all US orders over $40 | Flash Sale: 15% OFF</p>
+    <a href="#" class="tw-bg-white tw-text-[#04273C] tw-px-4 tw-py-1 tw-rounded-full tw-text-sm tw-font-medium hover:tw-bg-gray-200">
+      Shop now
+    </a>
+  </div>
+</section>
+
+<!-- Barra de navegación -->
+<nav class="tw-bg-white tw-shadow-md tw-py-4">
+  <div class="tw-max-w-6xl tw-mx-auto tw-flex tw-justify-between tw-items-center tw-px-4">
+    <!-- Logo -->
+    <div class="tw-flex tw-items-center">
+      <img src="./img/logo-navbar.png" alt="Invigorated Water Logo" class="tw-h-8 tw-mr-4">
+ 
+    </div>
+
+     <div class="tw-hidden">
+      <div class="tw-hidden md:tw-flex tw-gap-8 tw-text-gray-700">
+        <a href="#" class="hover:tw-text-[#04273C] tw-font-bold">Shop</a>
+        <a href="#" class="hover:tw-text-[#04273C] tw-font-bold">Benefits</a>
+        <a href="#" class="hover:tw-text-[#04273C] tw-font-bold">Our Story</a>
+        <a href="#" class="hover:tw-text-[#04273C] tw-font-bold">Rewards</a>
+      </div>
+     </div>
+ 
+
+    <!-- Iconos -->
+    <div class="tw-flex tw-items-center tw-gap-4">
+      <button class="tw-p-2">
+         <img src="./img/Basket.svg" alt="basket"  >
+      </button>
+      <button class="tw-p-2">
+        <img src="./img/Vector.svg" alt="user"  >
+      </button>
+      <button class="tw-p-2">
+        <img src="./img/lupa.svg" alt="lupa"  >
+        
+      </button>
+    </div>
+  </div>
+</nav>
+
+<section class="tw-py-12 bg-custom-gradient-reverse">
+  <div class="tw-max-w-6xl tw-mx-auto tw-flex tw-flex-wrap tw-gap-8 tw-px-4">
+    <!-- Galería de imágenes del producto -->
+ 
+<div class="tw-w-full lg:tw-w-1/2">
+  <div class="tw-bg-white tw-rounded-lg   tw-p-4">
+    <div class="swiper-container main-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./img/filter-slider.png" alt="Glass Pitcher" class="tw-w-full tw-rounded-md">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/Img1.png" alt="Glass Pitcher - 1" class="tw-w-full tw-rounded-md">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/Img2.png" alt="Glass Pitcher - 2" class="tw-w-full tw-rounded-md">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/Img3.png" alt="Glass Pitcher - 3" class="tw-w-full tw-rounded-md">
+        </div>
+        <!-- Agrega más imágenes según sea necesario -->
+      </div>
+    </div>
+    <div class="swiper-container thumb-slider tw-mt-4">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./img/filter-slider.png" alt="Glass Pitcher"  class="tw-w-20 tw-h-20 tw-rounded-md">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/Img1.png" alt="Thumbnail 1" class="tw-w-20 tw-h-20 tw-rounded-md">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/Img2.png" alt="Thumbnail 2" class="tw-w-20 tw-h-20 tw-rounded-md">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/Img3.png" alt="Thumbnail 3" class="tw-w-20 tw-h-20 tw-rounded-md">
+        </div>
+        <!-- Agrega más thumbnails según necesidad -->
+      </div>
+    </div>
+  </div>
+  <!-- Texto debajo del slider -->
+  <div class="tw-text-center tw-mt-2 tw-text-blue-500">
+    Slide right ➡️
+  </div>
+</div>
+ 
+
+    <!-- Detalles del producto -->
+    <div class="tw-w-full lg:tw-w-1/2">
+      <div class="blur-effect tw-rounded-lg tw-shadow-lg tw-p-6">
+        <h2 class="tw-text-lg tw-text-gray-500">195+ Trusted Customer Reviews</h2>
+        <h1 class="tw-text-4xl lg:tw-text-5xl tw-font-extrabold tw-text-gray-800 tw-mt-2">
+          Restore Glass Pitcher - Transform Your Tap Water into Clean, Mineral-Rich Hydration
+        </h1>
+        <p class="tw-text-gray-700 tw-mt-4">Indulge in purified, high pH water that's as refreshing as it is environmentally friendly.</p>
+        <p class="tw-text-3xl tw-font-bold tw-text-gray-800 tw-mt-6">$72.70</p>
+    
+        <!-- Opciones de compra -->
+        <div class="tw-mt-6">
+          <div class="tw-flex tw-flex-col tw-gap-2">
+            <div class="tw-flex items-center tw-justify-between tw-bg-[#04273C] tw-text-white tw-rounded-xl tw-py-3 tw-pl-4 tw-pr-2" style="margin-bottom: 1rem;">
+             
+                <div class=" tw-px-3 ">
+                  <input type="radio" id="subscription" name="purchaseOption" checked class="tw-mr-2">
+                  <label for="subscription" class="tw-font-semibold tw-mr-auto">Subscription</label>
+                </div>
+                <div class="  tw-px-3 ">
+                  <span class="tw-bg-[#F7D563] tw-text-black tw-px-4 tw-py-2 tw-rounded-full tw-text-xs tw-font-semibold">Save 20%</span>
+                </div>
+                
+              
+             
+            </div>
+            <div class="tw-flex items-center    tw-border tw-border-gray-300 tw-rounded-xl tw-py-3 tw-pl-4 tw-pr-2">
+              <div class="tw-px-3">
+                <input type="radio" id="singlePurchase" name="purchaseOption" class="tw-mr-2">
+                <label for="singlePurchase" class="tw-font-bold tw-mr-auto tw-text-gray-800">Single purchase</label>
+              </div>
+
+            </div>
+          </div>
+          <div class="tw-mt-4  tw-p-4 tw-rounded-lg">
+            <label class="tw-block tw-font-semibold tw-text-gray-800">Subscription time:</label>
+            <div class="tw-flex tw-gap-0 md:tw-gap-4 tw-mt-2">
+
+                <button class="tw-bg-[#04273C] tw-text-white tw-px-4 tw-py-2 tw-rounded-xl tw-border tw-border-transparent tw-flex tw-flex-col tw-items-start  ">
+                  <span class="tw-font-semibold tw-text-sm">Replace every 5 months</span>
+
+                    <span class="tw-block tw-text-xs tw-text-gray-200">1 Person</span>
+                </button>
+                <button class=" tw-px-4 tw-py-2 tw-rounded-xl tw-border tw-border-gray-300 tw-flex tw-flex-col tw-items-start tw-justify-center">
+                    <span class="tw-font-semibold">Replace every 4 months</span>
+                    <span class="tw-block tw-text-xs tw-text-gray-600">2 People</span>
+                </button>
+                <button class="  tw-px-4 tw-py-2 tw-rounded-xl tw-border tw-border-gray-300 tw-flex tw-flex-col tw-items-start tw-justify-center relative">
+                    <span class="tw-bg-yellow-500 tw-text-white tw-px-2 tw-rounded-full tw-text-xs tw-font-semibold tw-absolute -tw-top-2 tw-left-4">Popular</span>
+                    <span class="tw-font-semibold">Replace every 3 months</span>
+                    <span class="tw-block tw-text-xs tw-text-gray-600">3-4 People</span>
+                </button>
+                <button class="  tw-px-4 tw-py-2 tw-rounded-xl tw-border tw-border-gray-300 tw-flex tw-flex-col tw-items-start tw-justify-center">
+                    <span class="tw-font-semibold">Replace every month</span>
+                    <span class="tw-block tw-text-xs tw-text-gray-600">5+ People</span>
+                </button>
+            </div>
+        </div>
+        
+        </div>
+    
+        <!-- Botón de compra -->
+        <div class="tw-flex tw-justify-center  tw-mt-6" style="gap: 1rem;">
+      <!-- Contador Estilizado -->
+<div class="tw-flex tw-items-center tw-bg-white tw-rounded-xl tw-shadow-sm tw-border tw-border-gray-200 tw-my-3">
+  <button class="tw-px-3 tw-py-2 tw-text-lg tw-text-[#04273C] tw-font-bold tw-rounded-full hover:tw-bg-gray-100 focus:tw-outline-none">
+      -
+  </button>
+  <span class="tw-mx-4 tw-text-[#04273C] tw-font-semibold tw-text-base">1</span>
+  <button class="tw-px-3 tw-py-2 tw-text-lg tw-text-[#04273C] tw-font-bold tw-rounded-full hover:tw-bg-gray-100 focus:tw-outline-none">
+      +
+  </button>
+</div>
+
+          <!-- Botón de compra -->
+          <button class="tw-bg-[#F7D563]  tw-w-full  tw-px-6 tw-py-3 tw-rounded-lg tw-text-[#04273C] tw-font-bold tw-text-lg">
+              Add To Cart - $99
+          </button>
+      </div>
+
+      <div class="tw-py-3 tw-my-3">
+        <p>Elevate your hydration with the pH RESTORE Glass Water Pitcher. Crafted from food-grade borosilicate glass, this pitcher delivers clean, high pH water that's environmentally friendly and health-boosting. Enjoy the elegance of glass and the purity of natural filtration. Includes multi-stage PH001 filter.</p>
+      </div>
+      
+    
+        <!-- Garantías y beneficios -->
+        <ul class="tw-mt-6 tw-space-y-2">
+          <li class="tw-flex tw-items-center">
+            <div>
+              <img src="./img/dollar-icon.svg" alt="dolar">
+            </div>
+            <span class="tw-ml-2">60 Day Money Back Guarantee</span>
+          </li>
+          <li class="tw-flex tw-items-center">
+            <div>
+              <img src="./img/bpa-free-icon.svg" alt="bpa">
+            </div>
+            <span class="tw-ml-2">100% BPA-Free Non-Toxic</span>
+          </li>
+          <li class="tw-flex tw-items-center">
+            <div>
+              <img src="./img/safe-food-icon.svg" alt="safe-food">
+            </div>
+            
+            <span class="tw-ml-2">100% Safe For Food</span>
+          </li>
+        </ul>
+
+        <section class="tw-py-12 tw-bg-blue-50 tw-relative">
+          <div class="tw-max-w-6xl tw-mx-auto tw-px-4">
+              <h2 class="  tw-text-gray-800 tw-mb-6">What they are saying</h2>
+              <div class="tw-flex tw-flex-wrap tw--mx-3">
+                  <!-- Testimonial 1 -->
+                  <article class="tw-w-full md:tw-w-1/2 lg:tw-w-1/3 tw-px-3 tw-mb-6">
+                      <div class="  tw-rounded-xl tw-p-3 tw-h-full  ">
+                          <img src="./img/drinking-water.png" alt="User Testimonial" class="tw-rounded-lg tw-w-full tw-object-cover tw-mb-4">
+                          <div class="tw-flex   tw-mb-2">
+                              <span class="tw-text-yellow-500 tw-text-lg">★★★★★</span>
+                          </div>
+                          <div>
+                            <p class="tw-text-gray-700 tw-text-sm">“It’s refreshing every time I drink water these days”</p>
+
+                          </div>
+                         
+                      </div>
+                  </article>
+                  <!-- Testimonial 2 -->
+                  <article class="tw-w-full md:tw-w-1/2 lg:tw-w-1/3 tw-px-3 tw-mb-6">
+                      <div class="  tw-rounded-xl  tw-p-3 tw-h-full  ">
+                          <img src="./img/drinking-water-2.png" alt="User Testimonial" class="tw-rounded-lg tw-w-full tw-object-cover tw-mb-4">
+                          <div class="tw-flex   tw-mb-2">
+                              <span class="tw-text-yellow-500 tw-text-lg">★★★★★</span>
+                          </div>
+                          <div>
+                            <p class="tw-text-gray-700 tw-text-sm">“We are getting safe drinking water every day”</p>
+                          </div>
+                         
+                      </div>
+                  </article>
+                  <!-- Testimonial 3 -->
+                  <article class="tw-w-full md:tw-w-1/2 lg:tw-w-1/3 tw-px-3 tw-mb-6">
+                      <div class="  tw-rounded-xl  tw-p-3 tw-h-full ">
+                          <img src="./img/drinking-water-3.png" alt="User Testimonial" class="tw-rounded-lg tw-w-full tw-object-cover tw-mb-4">
+                          <div class="tw-flex   tw-mb-2">
+                              <span class="tw-text-yellow-500 tw-text-lg">★★★★★</span>
+                          </div>
+
+                          <div>
+                            <p class="tw-text-gray-700 tw-text-sm">“I can drink water without
+                          </div>
+                           
+                      </div>
+                  </article>
+              </div>
+          </div>
+      </section>
+      
+      
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+
   <section class="tw-py-12 bg-custom-gradient">
     <div class="tw-max-w-6xl tw-mx-auto tw-text-center">
       <h2 class="tw-text-sm tw-text-gray-600 tw-uppercase">Why Invigorated Water Stands Out</h2>
@@ -156,7 +427,7 @@
   
 
       <section class="bg-custom-gradient tw-py-12">
-        <div class="tw-max-w-6xl tw-mx-auto tw-px-4 lg:tw-flex lg:tw-gap-8">
+        <div class="tw-max-w-6xl tw-mx-auto tw-px-4 lg:tw-flex   lg:tw-gap-8">
           <!-- Texto descriptivo e imagen de la jarra -->
           <div class="tw-w-full lg:tw-w-1/2 tw-mb-8 lg:tw-mb-0">
             <p class="tw-text-4xl tw-font-bold tw-text-gray-800">Dreams fulfilled - high alkaline filtered water in a sleek glass pitcher with a bamboo lid.</p>
@@ -181,7 +452,7 @@
                 <p class="tw-text-gray-600 tw-mt-2">Tap water can contain chemicals and heavy metals that may have adverse health effects over time. Our ULTRA filters are certified to remove over 90% of lead, chlorine, and other contaminants. Unlike competitors, our filters not only purify your water but also add essential minerals that other filters remove, supporting your health and wellness. Start your journey to smarter hydration today!</p>
                 <!-- Imagen PH Scale -->
                 <div class="tw-mt-4">
-                  <img src="path-to-your-ph-scale-image.png" alt="PH Scale" class="tw-w-full tw-rounded-md">
+                  <img src="./img/croma.png" alt="PH Scale" class="tw-w-full tw-rounded-md">
                 </div>
               </div>
           
@@ -202,94 +473,86 @@
         </div>
       </section>
       
-      <section class="tw-py-12  bg-custom-gradient-reverse tw-relative">
+      <section class="tw-py-12 bg-custom-gradient-reverse tw-relative">
         <div class="tw-max-w-6xl tw-mx-auto tw-px-4">
-          <!-- Imagen de fondo a la izquierda -->
-          <div class="tw-absolute tw-left-0 tw-top-0 tw-w-1/3 tw-h-full tw-bg-no-repeat tw-bg-left tw-bg-cover" style="background-image: url('./img/bg-left.png'); background-size: 60%"></div>
-          
-          <!-- Contenido principal -->
-          <div class="tw-relative tw-z-10">
-            <!-- Header de la sección -->
-            <header class="tw-text-center tw-mb-8">
-              <h3 class="tw-text-sm tw-text-gray-600 tw-uppercase">Hydrate Better, Live Healthier</h3>
-              <h2 class="tw-text-4xl tw-font-bold tw-text-gray-800 tw-mt-2">The Benefits of Alkaline Water</h2>
-              <p class="tw-text-gray-600 tw-mt-4">Alkaline water offers more than just hydration, it's a powerful tool for boosting health and well-being.</p>
-            </header>
-      
-            <!-- Contenido principal en columnas -->
-            <div class="tw-flex tw-flex-wrap tw--mx-3">
-              <!-- Tarjeta 1 -->
-              <article class="tw-w-full md:tw-w-1/2 lg:tw-w-1/3 tw-px-3 tw-mb-6">
-                <div class="tw-bg-white tw-rounded-lg tw-shadow-lg tw-p-6 tw-h-full">
-                  <img src="path-to-your-image-1.jpg" alt="Improves Hydration" class="tw-rounded-lg tw-mb-4 tw-w-full">
-                  <h4 class="tw-text-2xl tw-font-semibold tw-text-gray-800">Improves Hydration</h4>
-                  <p class="tw-text-gray-600 tw-mt-2">Alkaline water may be more easily absorbed by the body, leading to better hydration, especially beneficial for athletes.</p>
-                </div>
-              </article>
-      
-              <!-- Tarjeta 2 -->
-              <article class="tw-w-full md:tw-w-1/2 lg:tw-w-1/3 tw-px-3 tw-mb-6">
-                <div class="tw-bg-white tw-rounded-lg tw-shadow-lg tw-p-6 tw-h-full tw-flex tw-flex-col">
-                  <div class="tw-flex tw-items-center tw-mb-4">
-                    <div class="tw-bg-blue-100 tw-p-2 tw-rounded-full">
-                      <!-- Icono de Digestive Health -->
-                      <img src="path-to-icon-1.svg" alt="Digestive Health Icon" class="tw-w-6 tw-h-6">
+            <!-- Imagen de fondo a la izquierda -->
+            <div class="tw-absolute tw-left-0 tw-top-0 tw-w-1/3 tw-h-full tw-bg-no-repeat tw-bg-left tw-bg-cover" style="background-image: url('./img/bg-left.png'); background-size: 60%"></div>
+    
+            <!-- Contenido principal -->
+            <div class="tw-relative tw-z-10">
+                <!-- Header de la sección -->
+                <header class="tw-text-center tw-mb-8">
+                    <h3 class="tw-text-sm tw-text-gray-600 tw-uppercase">Hydrate Better, Live Healthier</h3>
+                    <h2 class="tw-text-4xl tw-font-bold tw-text-gray-800 tw-mt-2">The Benefits of Alkaline Water</h2>
+                    <p class="tw-text-gray-600 tw-mt-4">Alkaline water offers more than just hydration, it's a powerful tool for boosting health and well-being.</p>
+                </header>
+    
+                <!-- Contenido principal en columnas -->
+                <div class="tw-flex tw-flex-wrap tw--mx-3">
+                    <!-- Columna 1: Card 1 y Card 4 -->
+                    <div class="tw-w-full lg:tw-w-1/3 tw-px-3">
+                        <article class="tw-bg-white/30 tw-backdrop-blur-md tw-rounded-lg tw-shadow-lg tw-p-6 tw-mb-6" >
+                            <img src="./img/kid-drinking.png" alt="Improves Hydration" class="tw-rounded-lg tw-mb-4 tw-w-full">
+                            <div style="padding: 2rem;">
+                              <h4 class="tw-text-2xl tw-font-bold tw-text-gray-800">Improves Hydration</h4>
+                            <p class="tw-text-gray-600 tw-mt-2">Alkaline water may be more easily absorbed by the body, leading to better hydration, especially beneficial for athletes.</p>
+                            </div>
+                            
+                        </article>
+    
+                        <article class="tw-bg-white/30 tw-backdrop-blur-md tw-rounded-lg tw-shadow-lg  " style="padding: 3.5rem;">
+                          <div class="  tw-p-2 tw-rounded-full tw-mb-4">
+                            <img src="./img/atom-icon.svg" alt="Digestive Health Icon"  width="52" height="52">
+                        </div>
+                            <h4 class="tw-text-2xl tw-font-bold tw-text-gray-800">Antioxidant Properties</h4>
+                            <p class="tw-text-gray-600 tw-mt-2">Believed to have antioxidant properties that help combat free radicals and reduce oxidative stress.</p>
+                        </article>
                     </div>
-                  </div>
-                  <h4 class="tw-text-2xl tw-font-semibold tw-text-gray-800">Digestive Health</h4>
-                  <p class="tw-text-gray-600 tw-mt-2 tw-flex-grow">May improve digestion and reduce symptoms like bloating and indigestion by balancing stomach pH.</p>
-                </div>
-              </article>
-      
-              <!-- Tarjeta 3 -->
-              <article class="tw-w-full md:tw-w-1/2 lg:tw-w-1/3 tw-px-3 tw-mb-6">
-                <div class="tw-bg-white tw-rounded-lg tw-shadow-lg tw-p-6 tw-h-full">
-                  <img src="path-to-your-image-2.jpg" alt="Skin Health" class="tw-rounded-lg tw-mb-4 tw-w-full">
-                  <h4 class="tw-text-2xl tw-font-semibold tw-text-gray-800">Skin Health</h4>
-                  <p class="tw-text-gray-600 tw-mt-2">Improved hydration can lead to better skin elasticity and reduced appearance of fine lines and wrinkles.</p>
-                </div>
-              </article>
-      
-              <!-- Tarjeta 4 -->
-              <article class="tw-w-full md:tw-w-1/2 lg:tw-w-1/3 tw-px-3 tw-mb-6">
-                <div class="tw-bg-white tw-rounded-lg tw-shadow-lg tw-p-6 tw-h-full">
-                  <img src="path-to-your-image-3.jpg" alt="Antioxidant Properties" class="tw-rounded-lg tw-mb-4 tw-w-full">
-                  <h4 class="tw-text-2xl tw-font-semibold tw-text-gray-800">Antioxidant Properties</h4>
-                  <p class="tw-text-gray-600 tw-mt-2">Believed to have antioxidant properties that help combat free radicals and reduce oxidative stress.</p>
-                </div>
-              </article>
-      
-              <!-- Tarjeta 5 -->
-              <article class="tw-w-full md:tw-w-1/2 lg:tw-w-1/3 tw-px-3 tw-mb-6">
-                <div class="tw-bg-white tw-rounded-lg tw-shadow-lg tw-p-6 tw-h-full tw-flex tw-flex-col">
-                  <div class="tw-flex tw-items-center tw-mb-4">
-                    <div class="tw-bg-blue-100 tw-p-2 tw-rounded-full">
-                      <!-- Icono de Energy Levels -->
-                      <img src="path-to-icon-2.svg" alt="Energy Levels Icon" class="tw-w-6 tw-h-6">
+    
+                    <!-- Columna 2: Card 2 y Card 5 -->
+                    <div class="tw-w-full lg:tw-w-1/3 tw-px-3">
+                        <article class="tw-bg-white/30 tw-backdrop-blur-md tw-rounded-lg tw-shadow-lg tw-p-6 tw-mb-6 tw-flex tw-flex-col" style="padding: 3.5rem;">
+                            <div class="  tw-p-2 tw-rounded-full tw-mb-4">
+                                <img src="./img/water-icon.svg"  width="52" height="52" alt="Digestive Health Icon"  >
+                            </div>
+                            <h4 class="tw-text-2xl tw-font-bold tw-text-gray-800">Digestive Health</h4>
+                            <p class="tw-text-gray-600 tw-mt-2 tw-flex-grow">May improve digestion and reduce symptoms like bloating and indigestion by balancing stomach pH.</p>
+                        </article>
+    
+                        <article class="tw-bg-white/30 tw-backdrop-blur-md tw-rounded-lg tw-shadow-lg tw-p-6 tw-flex tw-flex-col"  >
+                            <img src="./img/couple.png"  alt="Enhanced Energy Levels" class="tw-rounded-lg tw-mb-4 tw-w-full">
+                            <div style="padding: 2rem;">
+                              <h4 class="tw-text-2xl tw-font-bold tw-text-gray-800">Enhanced Energy Levels</h4>
+                              <p class="tw-text-gray-600 tw-mt-2">Alkaline water may be more easily absorbed by the body, leading to better hydration, especially beneficial for athletes.</p>
+                            </div>
+                           
+                        </article>
                     </div>
-                  </div>
-                  <h4 class="tw-text-2xl tw-font-semibold tw-text-gray-800">Enhanced Energy Levels</h4>
-                  <p class="tw-text-gray-600 tw-mt-2 tw-flex-grow">Alkaline water may be more easily absorbed by the body, leading to better hydration, especially beneficial for athletes.</p>
-                </div>
-              </article>
-      
-              <!-- Tarjeta 6 -->
-              <article class="tw-w-full md:tw-w-1/2 lg:tw-w-1/3 tw-px-3 tw-mb-6">
-                <div class="tw-bg-white tw-rounded-lg tw-shadow-lg tw-p-6 tw-h-full tw-flex tw-flex-col">
-                  <div class="tw-flex tw-items-center tw-mb-4">
-                    <div class="tw-bg-blue-100 tw-p-2 tw-rounded-full">
-                      <!-- Icono de Contaminant Removal -->
-                      <img src="path-to-icon-3.svg" alt="Contaminant Removal Icon" class="tw-w-6 tw-h-6">
+    
+                    <!-- Columna 3: Card 3 y Card 6 -->
+                    <div class="tw-w-full lg:tw-w-1/3 tw-px-3">
+                        <article class="tw-bg-white/30 tw-backdrop-blur-md tw-rounded-lg tw-shadow-lg tw-p-6 tw-mb-6"  >
+                            <img src="./img/girl-alone.png" alt="Skin Health" class="tw-rounded-lg tw-mb-4 tw-w-full">
+                          <div style="padding: 2rem;">
+                            <h4 class="tw-text-2xl tw-font-bold tw-text-gray-800">Skin Health</h4>
+                            <p class="tw-text-gray-600 tw-mt-2">Improved hydration can lead to better skin elasticity and reduced appearance of fine lines and wrinkles.</p>
+                          </div>
+                            
+                        </article>
+    
+                        <article class="tw-bg-white/30 tw-backdrop-blur-md tw-rounded-lg tw-shadow-lg tw-p-6 tw-flex tw-flex-col" style="padding: 3.5rem;">
+                            <div class="  tw-p-2 tw-rounded-full tw-mb-4">
+                                <img src="./img/clean-icon.svg" width="52" height="52" alt="Contaminant Removal Icon" >
+                            </div>
+                            <h4 class="tw-text-2xl tw-font-bold tw-text-gray-800">Removal of Contaminants</h4>
+                            <p class="tw-text-gray-600 tw-mt-2 tw-flex-grow">Filters out harmful contaminants such as chlorine, lead, mercury, and pesticides, providing safer drinking water.</p>
+                        </article>
                     </div>
-                  </div>
-                  <h4 class="tw-text-2xl tw-font-semibold tw-text-gray-800">Removal of Contaminants</h4>
-                  <p class="tw-text-gray-600 tw-mt-2 tw-flex-grow">Filters out harmful contaminants such as chlorine, lead, mercury, and pesticides, providing safer drinking water.</p>
                 </div>
-              </article>
             </div>
-          </div>
         </div>
-      </section>
+    </section>
+    
       
 
       <section class="tw-py-12  tw-relative tw-bg-no-repeat tw-bg-right" style="background-image: url('./img/bg-right.png'); background-size: 20%;">
@@ -375,46 +638,66 @@
           </div>
         </div>
       </section>
-      <section class="tw-py-12 bg-white">
-        <div class="tw-max-w-6xl tw-mx-auto   tw-flex tw-flex-wrap  tw-gap-5">
-          <!-- Tarjeta 1: Free Shipping -->
-          <div class="tw-w-full md:tw-w-4/12  bg-custom-gradient tw-rounded-xl tw-shadow-lg tw-p-6 tw-flex tw-items-center">
-            <div class="tw-bg-blue-100 tw-rounded-full tw-p-3 tw-flex tw-items-center tw-justify-center tw-mr-4">
-              <img src="path-to-shipping-icon.svg" alt="Shipping Icon" class="tw-w-8 tw-h-8">
-            </div>
-            <div>
-              <h4 class="tw-text-lg tw-font-semibold tw-text-gray-800">Free Shipping</h4>
-              <p class="tw-text-gray-600">Get free standard shipping on all US orders</p>
-            </div>
-          </div>
+    
+      <section class="tw-py-12   tw-relative">
+        <div class="tw-max-w-6xl tw-mx-auto tw-px-4">
+          
+        
+            <!-- Contenido principal en columnas -->
+            <div class="tw-flex tw-flex-wrap tw--mx-3">
+              <!-- Tarjeta 1 -->
+              <article class=" tw-w-full md:tw-w-1/2 lg:tw-w-1/3 tw-px-3 tw-mb-6">
+                <div class="bg-card tw-rounded-xl tw-shadow-lg tw-p-6 tw-h-full">
+                  <div class=" tw-p-2 tw-rounded-full">
+                    <!-- Icono de Digestive Health -->
+                    <img src="./img/ship-icon.svg" alt="ship Icon"   height="52" width="52" >
+                  </div>
+                  <h4 class="tw-text-2xl tw-font-bold tw-text-gray-800">free shipping</h4>
+                  <p class="tw-text-gray-600 tw-mt-2">Get free standard shipping on all US orders</p>
+                </div>
+              </article>
       
-          <!-- Tarjeta 2: Customer Service -->
-          <div class="tw-w-full md:tw-w-4/12  bg-custom-gradient tw-rounded-xl tw-shadow-lg tw-p-6 tw-flex tw-items-center">
-            <div class="tw-bg-blue-100 tw-rounded-full tw-p-3 tw-flex tw-items-center tw-justify-center tw-mr-4">
-              <img src="path-to-customer-service-icon.svg" alt="Customer Service Icon" class="tw-w-8 tw-h-8">
-            </div>
-            <div>
-              <h4 class="tw-text-lg tw-font-semibold tw-text-gray-800">Customer Service</h4>
-              <p class="tw-text-gray-600">+1-800-898-0103<br>support@invigoratedwater.com</p>
-            </div>
-          </div>
+              <!-- Tarjeta 2 -->
+              <article class="tw-w-full md:tw-w-1/2 lg:tw-w-1/3 tw-px-3 tw-mb-6">
+                <div class="bg-card tw-rounded-xl tw-shadow-lg tw-p-6 tw-h-full tw-flex tw-flex-col">
+                  <div class="tw-flex tw-items-center tw-mb-4">
+                    <div class=" tw-p-2 tw-rounded-full">
+                      <!-- Icono de Digestive Health -->
+                      <img src="./img/headphones-icon.svg"  height="52" width="52"  alt="headphones Icon"  >
+                    </div>
+                  </div>
+                  <h4 class="tw-text-2xl tw-font-bold tw-text-gray-800">Customer Service</h4>
+                  <p class="tw-text-gray-600 tw-mt-2 tw-flex-grow">+1-800-898-0103</p>
+                  <p class="tw-text-gray-600 tw-mt-2 tw-flex-grow">support@invigoratedwater.com</p>
+                </div>
+              </article>
       
-          <!-- Tarjeta 3: Refer a Friend -->
-          <div class="tw-w-full md:tw-w-4/12 bg-custom-gradient tw-rounded-xl tw-shadow-lg tw-p-6 tw-flex tw-items-center">
-            <div class="tw-bg-blue-100 tw-rounded-full tw-p-3 tw-flex tw-items-center tw-justify-center tw-mr-4">
-              <img src="path-to-refer-friend-icon.svg" alt="Refer a Friend Icon" class="tw-w-8 tw-h-8">
-            </div>
-            <div>
-              <h4 class="tw-text-lg tw-font-semibold tw-text-gray-800">Refer a Friend</h4>
-              <p class="tw-text-gray-600">Give $30 off & Get $30 off</p>
+              <!-- Tarjeta 3 -->
+              <article class="tw-w-full md:tw-w-1/2 lg:tw-w-1/3 tw-px-3 tw-mb-6">
+                <div class="bg-card tw-rounded-xl tw-shadow-lg tw-p-6 tw-h-full">
+                  <div class=" tw-p-2 tw-rounded-full">
+                    <!-- Icono de Digestive Health -->
+                    <img src="./img/happy-icon.svg" alt="happy Icon" height="52" width="52"  >
+                  </div>
+                  <h4 class="tw-text-2xl tw-font-bold tw-text-gray-800">Refer to a friend</h4>
+                  <p class="tw-text-gray-600 tw-mt-2"> Give $30 off & Get $30 off</p>
+                </div>
+              </article>
+      
+            
+      
+           
+      
+          
             </div>
           </div>
         </div>
       </section>
-
       
+      
+    
       <footer class="tw-bg-[#04273C] tw-text-white tw-py-12 tw-rounded-t-xl">
-        <div class="tw-max-w-6xl tw-mx-auto tw-px-4 tw-flex tw-flex-wrap  tw-justify-around">
+        <div class="tw-max-w-screen-xl tw-mx-auto tw-px-4 tw-flex tw-flex-wrap  tw-justify-around">
           <!-- Logo y descripción -->
           <div class="tw-w-full lg:tw-w-4/12 mx-5 tw-mb-8 lg:tw-mb-0">
             <div>
@@ -491,7 +774,32 @@
           </div>
         </div>
       </footer>
-      
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          // Configurar el thumb-slider
+          var thumbSlider = new Swiper('.thumb-slider', {
+            spaceBetween: 10,
+            slidesPerView: 4,
+            freeMode: true,
+            watchSlidesVisibility: true,
+            watchSlidesProgress: true,
+          });
+        
+          // Configurar el main-slider con los thumbs sincronizados
+          var mainSlider = new Swiper('.main-slider', {
+            spaceBetween: 10,
+            effect: 'fade', // Agrega el efecto fade para mostrar solo la imagen activa
+            fadeEffect: {
+              crossFade: true, // Habilita la transición suave
+            },
+            thumbs: {
+              swiper: thumbSlider,
+            },
+          });
+        });
+        
+      </script>
   </body>
   
 </html>
